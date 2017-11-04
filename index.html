@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="tecnologia,app,apps,celular,smartphone,cria莽茫o,ios,android,mobile,desenvolvimento">
+    <meta name="description" content="Pense no seu neg贸cio, deixe o desenvolvimento com a gente. Design e desenvolvimento sob medida de apps mobile.">
+    <meta name="author" content="Guizion Labs">
+    <meta name="reply-to" content="contato@guizion.com">
+
+    <title>个人博客</title>
+
+    <!-- Google Play -->
+    <!--<meta name="google-play-app" content="app-id=com.guizion.ecobike.sender">-->
+    <!-- Play Store -->
+    <!--<meta name="apple-itunes-app" content="app-id=544007664">-->
+
+
+    <!-- Facebook-->
+    <meta property="fb:app_id" content=""/>
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="www.guizion.com">
+    <meta property="og:title" content="Somos focados em desenvolvimento mobile e Web">
+    <meta property="og:site_name" content="Guizion">
+    <meta property="og:description" content="Nosso objetivo 茅 criar servi莽o customizado e de alta qualidade para smartphone, smart watch e outros dispositivos mobile.">
+    <meta property="og:image" content="http://www.guizion.com/images/fb_preview.jpg">
+    <!--<meta property="og:image:secure_url" content="https://www.guizion.com/images/fb_preview.jpg">-->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+
+    <!--Favicon Sketch-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="./my-logo_r1_c2.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <!--Facebook-->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1428468990751906',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "./js/sdk.js"/*tpa=http://connect.facebook.net/en_US/sdk.js*/;
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    <!--Sidbar android-->
+    <meta name="theme-color" content="#12121212">
+ 
+    <!-- attach CSS styles -->
+    <link href="./assets/bootstrap/bootstrap.min.css" tppabs="http://guizion.com/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" tppabs="http://guizion.com/css/style.css" rel="stylesheet" />
+    <link href="./css/animate.css" tppabs="http://guizion.com/css/animate.css" rel="stylesheet">
+
+    <!--Fontes-->
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" tppabs="http://guizion.com/fonts/Brandon/stylesheet.css"/>
+    <link href="css-family=Open+Sans-300italic,400italic,600italic,700italic,800italic,400,300,600,700,800.css" tppabs="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel='stylesheet' type='text/css'>
+
+    <!-- Javascript Scroll -->
+      <script src="./js/smooth-scroll.js" tppabs="http://guizion.com/js/smooth-scroll.js"></script>
+      <script>
+        smoothScroll.init({
+          speed: 1000,
+          easing: 'easeInOutCubic',
+          offset: 0,
+          updateURL: true,
+          callbackBefore: function ( toggle, anchor ) {},
+          callbackAfter: function ( toggle, anchor ) {}
+        });
+      </script>
+
+    <!--Google Analytics-->
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','js/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+      ga('create', 'UA-51857832-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
+  </head>
+  <body>
+
+    <!-- jQuery -->
+    <script src="./js/lib/jquery.js" tppabs="http://guizion.com/js/jquery.js"></script>
+    <script src="./js/lib/jquery.easing.min.js" tppabs="http://guizion.com/js/jquery.easing.min.js"></script>
+
+    <!-- attach JavaScripts -->
+    <script src="./assets/bootstrap/bootstrap.min.js" tppabs="http://guizion.com/js/bootstrap.min.js"></script>
+
+
+    <script src="./js/slick.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="./js/banner.js" tppabs="http://guizion.com/js/banner.js"></script>
+    <script src="./js/scroll.js" tppabs="http://guizion.com/js/scroll.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./assets/bootstrap/bootstrap.min.js" tppabs="http://guizion.com/js/bootstrap.min.js"></script>
+
+    <!--  BODY PAGE CONTENT -->
+    <a id="gotop" class="fadeIn homemenu active" hidefocus="true" style="display: inline;" data-scroll="" data-options="{ &quot;easing&quot;: &quot;linear&quot; }" href="#home">TOP</a>
+    <!-- <a  class="active" href="#top" hidefocus="true" style="display: inline;">TOP</a> -->
+    <!-- Menu -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main" style="margin-top: 5px;">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand fadeIn logo" data-scroll data-options='{ "easing": "linear" }' href="#"><img class="logo2" src="./img/logo/my-logo.png" height="86" width="600" tppabs="http://guizion.com/images/logo.png" /></a>
+       </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="fadeIn homemenu" data-scroll data-options='{ "easing": "linear" }' href="#home">HOME</a></li>
+            <li><a class="fadeIn projetomenu" data-scroll data-options='{ "easing": "linear" }' href="#inter">PROJETOS</a></li>
+            <li><a class="fadeIn projetomenu" data-scroll data-options='{ "easing": "linear" }' href="#about">Project</a></li>
+            <li><a class="fadeIn contatomenu" data-scroll data-options='{ "easing": "linear" }' href="#contact">CONTATO</a></li>
+
+          </ul>
+       </div>
+      </div>
+    </nav>
+
+    <div class="box0">
+      <!-- BG - Home -->
+      <div id="home" class="home">
+        <div id="oberlay" class="overlay">
+          <div class="text-vcenter container">
+            <h1 class="titulo fadeInUp">Welcome to my blogs, <br/>now that come here , good luck with you!!!</h1>
+            <div class="line-separator fadeInUp"></div>
+            <h3 class="fadeInUp txtbanner">Design e desenvolvimento sob medida de apps mobile</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div class="container">
+          <div class="inter" id="inter"></div>
+          <div id="row2" class="row2">
+            <div class="col-md-2 box1 fadeInUp">
+              <a id="txs1" data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx1();">1</a></br>
+              <a id="txs2" data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx2();">2</a></br>
+              <a id="txs3" data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx3();">3</a></br>
+              <a id="txs4" data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx4();">4</a></br>
+            </div>
+
+            <!-- Banner1-->
+            <div id = "banner1">
+              <div class="col-md-5 box2 fadeInUp">
+                <div class="titulo2">基本信息</div>
+                <div class="line-separatorbox"></div>
+                <ul class="subtitle list-group">
+                  <li class="list-group-item">
+                    <div class="media">
+                      <div class="media-left col-md-3">
+                        <a href="#">
+                          姓 名：
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">潘升喜</h4>
+                      </div>
+                    </div>
+                  </li>
+                    <li class="list-group-item">
+                    <div class="media">
+                      <div class="media-left col-md-3">
+                        <a href="#">
+                          性 别：
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">男</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media">
+                      <div class="media-left col-md-3">
+                        <a href="#">
+                          籍 贯：
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">广西 </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media">
+                      <div class="media-left col-md-3">
+                        <a href="#">
+                          年 龄：
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">28 </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media">
+                      <div class="media-left col-md-3">
+                        <a href="#">
+                           学 历：
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">大专</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media">
+                      <div class="media-left col-md-3">
+                        <a href="#">
+                          Q Q：
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">464960642</h4>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+                <!--<a href="http://guizion.com/doozo/"><div class="bottomsub">ler mais</div></a>-->
+                <a data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx2();"><div class="prev glyphicon glyphicon-play"></div></a>
+              </div>
+              <div class="col-md-5 box3 fadeInUp ">
+              <img src="./img/500克拉泪钻.jpg" height="130" width="233" alt="">
+                <div class="info-apply-post text-left">
+                  <p>工作年限：3年</p>
+               <p>期望薪资：面谈</p> 
+               <p> 求职意向：Web前端工程师</p> 
+               <p>目前状况：离职，一周内可以上岗</p>
+                </div> 
+              </div>
+              <div class="col-md-10 box4 tx1 fadeInUp"></div>
+            </div>
+            <!---->
+            <!-- Banner2-->
+            <div id = "banner2">
+              <div class="col-md-8 box2">
+                <div class="titulo2">专业技能</div>
+                <div class="line-separatorbox"></div>
+                <div class="panel">
+                 <div class="panel-heading"></div>
+                  <div class="text-left">
+                    <p>1、熟练HTML/HTML5、CSS/CSS3、JavaScript等前端开发语言。</p>
+                  <p>2、熟练使用Ajax技术对后台进行数据请求，动态加载数据以及页面渲染。</p>
+                  <p>3、熟练使用Webstorm 、Sublime Txet3、Visual Studio  
+                        Code等开发工具及Git代码管理和SVN构建工具。</p>
+                  <p>4、熟练运用Bootstrap、jQuery、RequreJS、Angular、Vue等主流前端框架。</p>
+                  <p>5、可以编写一些jQuery插件，优化代码。</p>
+                <p>6、可以使用JS原生代码编写网页业务逻辑， 能使用HTML5编写移动端自适应和响应式网页。</p>
+                <p>7、能够用DIV+CSS制作出符合网页标准化的静态网页原型HTML，兼容IE7/IE8/IE9/火狐/Chrome等主流浏览器并能迅速定位和解决技术问题。</p>
+                <p>8、对Nodejs、PHP这两门后台语言有所了解。</p>
+                  </div>
+                  
+                </div>
+                <!--<a href="file:///Users/alangoncalves/Desktop/Site%20Gruizion/doozo.html"><div class="bottomsub">ler mais</div></a>-->
+                <a data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx3();"><div class="prev glyphicon glyphicon-play"></div></a>
+              </div>
+              <div class="col-md-5 box3 text-center">
+                
+              </div>
+              <div class="col-md-10 box4 tx2"></div>
+            </div>
+            <!---->
+            <!-- Banner3-->
+            <div id = "banner3">
+              <div class="col-md-5 box2">
+                <div class="titulo2">自我评价</div>
+                <div class="line-separatorbox"></div>
+                <div class="subtitle">
+                  <div class="panel">
+                 <div class="panel-heading"></div>
+                  <div class="text-left">
+                    <p>１、具有良好的沟通能力、业务逻辑分析能力和解决问题的能力。对编程有浓厚的兴趣。</p>
+                  <p>2、对前端编程有自己独到的见解，擅长使用原生态+JQ的方式实现前端功能。</p>
+                  <p>3、学习能力强，有了面向对象的编程思想后，能融会贯通其它的编程语言。</p>
+                  <p>4、具有优良的职业操守、有优秀的团队合作精神。</p>
+                  <p>5、工作方面，具有高度的责任心，做事细心、踏实，能按时按量完成任务。</p>
+                <p>6、为人处世方面，心怀感恩，喜欢站在他人的角度，把他人的感受放到第一位。</p>
+                
+                  </div>
+                  
+                </div>
+                </div>
+                <!--<a href="file:///Users/alangoncalves/Desktop/Site%20Gruizion/doozo.html"><div class="bottomsub">ler mais</div></a>-->
+                <a data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx4();"><div class="prev glyphicon glyphicon-play"></div></a>
+              </div>
+              <div class="col-md-5 box3 text-center">
+                <p class="lead">....</p>
+              </div>
+              <div class="col-md-10 box4 tx3"></div>
+            </div>
+            <!---->
+            <!-- Banner4-->
+            <div id = "banner4">
+              <div class="col-md-5 box2">
+                <div class="titulo2">....</div>
+                <div class="line-separatorbox"></div>
+                <div class="subtitle">....</div>
+                <!--<a href="file:///Users/alangoncalves/Desktop/Site%20Gruizion/doozo.html"><div class="bottomsub">ler mais</div></a>-->
+                <a data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx1();"><div class="prev glyphicon glyphicon-play"></div></a>
+              </div>
+              <div class="col-md-5 box3 text-center">
+                <p class="lead">....</p>
+              </div>
+                <div class="col-md-10 box4 tx4"></div>
+            </div>
+            <!---->
+            <!-- Banner5-->
+            <div id = "banner5">
+              <div class="col-md-5 box2">
+                <div class="titulo2">....</div>
+                <div class="line-separatorbox"></div>
+                <div class="subtitle">.....</div>
+                <!--<a href="file:///Users/alangoncalves/Desktop/Site%20Gruizion/doozo.html"><div class="bottomsub">ler mais</div></a>-->
+                <a data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx6();"><div class="prev glyphicon glyphicon-play"></div></a>
+              </div>
+              <div class="col-md-5 box3 text-center">
+                <p class="lead">....</p>
+              </div>
+              <div class="col-md-10 box4 tx5"></div>
+            </div>
+            <!---->
+            <!-- Banner6-->
+            <div id = "banner6">
+              <div class="col-md-5 box2">
+                <div class="titulo2">...</div>
+                <div class="line-separatorbox"></div>
+                <div class="subtitle">....</div>
+                <!--<a href="file:///Users/alangoncalves/Desktop/Site%20Gruizion/doozo.html"><div class="bottomsub">ler mais</div></a>-->
+                <a data-scroll data-options='{ "easing": "linear" }' href="#inter" type="button" onclick="tx1();"><div class="prev glyphicon glyphicon-play"></div></a>
+              </div>
+              <div class="col-md-5 box3 text-center">
+                <p class="lead">....</p>
+              </div>
+              <div class="col-md-10 box4 tx6"></div>
+            </div>
+            <!---->
+
+
+            <div class="col-md-12 noticias">
+              <div class="news">....</div>
+                <!--<div class="col-md-3"></div>-->
+                <!--<a href="https://youtu.be/H5uNt9OUyT8" target="_blank"><div class="col-md-3 patro"></div></a>-->
+                <!--<a href="https://youtu.be/il51hvt0Gqo" target="_blank"><div class="col-md-3 ric"></div></a>-->
+                <div class="customer-logos">
+                  <div class="slide"><img src="./img/logo/angular-logo.png" width="190" height="103" tppabs="http://guizion.com/images/marcas/marca1.png"></div>
+                  <div class="slide"><img src="./img/logo/bootstrap-favicon.png" width="190" height="103" tppabs="http://guizion.com/images/marcas/marca5.png"></div>
+                  <div class="slide"><img src="./img/logo/vue-logo.png" width="190" height="103" tppabs="http://guizion.com/images/marcas/marca2.png"></div>
+                  <div class="slide"><img src="./assets/img/favicons/marca4.png" tppabs="http://guizion.com/images/marcas/marca4.png"></div>
+                  <div class="slide"><img src="./assets/img/favicons/marca3.png" tppabs="http://guizion.com/images/marcas/marca3.png"></div>
+                  <!--<div class="slide"><img src="images/marcas/marca2.png"></div>-->
+                  <!--<div class="slide"><img src="images/marcas/marca3.png"></div>-->
+                </div>
+
+            </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="slider">
+            <h4>项目：裕达网</h4>
+            <h5>http://www.yudaxsf.com/</h5>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">开发技术： HTML5 + CSS + JQuery + Javascript + Ajax </p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left" >项目描述：</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">此项目是一个电商网站，主要功能包括：商品搜索、商品展示、商品评论、购物车、下单流程、在线客服、在线支付、订单状态查询; 管理员后台管理功能包括：商品管理、订单管理、用户管理、客服管理、权限管理、业务分析与统计。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">项目职责：我主要负责网站的首页和商品展示、商品搜索、购物车功能的实现、下单管理页面的编写和js的动态效果展示。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">工作内容：</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">1、使用HTML5的语义化标签进行布局，对输入框使用H5的新特性，便于SEO。使用CSS简单的对样式的修饰，实现简单网页展示。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">2、使用JQuery配合JavaScript实现轮播、公告滑动等复杂的逻辑代码。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">3、使用Ajax异步数据请求调用后端接口，由后端返回JSON数据，解析JSON数据添加到节点中，并插入到HTML中，实现动态加载商品。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">4、使用JavaScript和JQuery完成订单管理，购物车等一系列的时时数据的操作。</p>
+        </div>
+      <div class="carousel-caption">
+        项目：裕达网
+      </div>
+    </div>
+    <div class="item">
+      <div class="slider">
+            <h4>项目：广州东圃中学管理系统</h4>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">开发技术：  JavaScript + HTML5+ CSS/CSS3+ jQuery +Ajax +JQuery.cookie+Bootstrap+Echarts+requreJS+artTemplate </p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left" >项目描述：</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">教学管理系统，主要功能： 学生注册个人信息、学生信息展示、学生考勤及打卡、学生提交作业、学生在线考试、老师修改学生信息、授予学生权限、在线出题等多种功能。老师可以在管理页面添加，删除，编辑学生信息；学生状态，学生只有登陆，注册，查看，提交作业等一些只读功能。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">项目职责：我主要负责学生注册个人信息、学生信息展示、添加，删除，编辑学生信息的页面编写和js效果展示。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">工作内容：</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">1、根据项目需求，使用bootstrap进行页面的排版布局。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">2、通过JQuery和原生js配合获取到需要动态加载的节点，使用Ajax异步请求调用后端提供的接口，获取后端返回的JSON格式数据。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">3、使用ajax进行验证登录、前后台的数据交互。 </p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">4、使用JavaScript配合JQuery获取用户选择需要操作的对象，进行遍历，取值，修改等一系列的逻辑操作。</p>
+            <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">5、使用requirejs的模块化思想对后台增、删、改、查操作的页面编写。</p>
+        </div>
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="item">
+        <div class="slider">
+        <h4>项目:深圳市素净环保科技有限公司(响应式开发）</h4>
+        <h5>http://www.sujinglife.com</h5>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">开发技术：  JavaScript + HTML+ CSS+ jQuery +Ajax +Bootstrap+JSP</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">项目描述：</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">素净是一家专注空气净化设备产品的公司,为了提高用户的体验效果,在这个项目中我主要使用了栅格布局以及主要用RequireJS的模块化思想和jQuery 框架做页面交互效果。
+          </p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">项目职责: 我主要负责素净官网首页模块、Air模块、商城模块的页面编写和js效果。</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">工作内容：</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">1、根据客户需求和原型图规划好各页面的架构。</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">2、与UI沟通商讨页面设计原型图,还原设计师的PSD稿。</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">3、使用RequireJS构建项目,实现模块化,组件化的开发方式。</p>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">4、使用bootstrap的栅格布局来实现完成响应式, swiper完成轮播图。</p>
+        </div>
+      </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        
+          <!--<a href="file:///Users/alangoncalves/Desktop/Site%20Gruizion/doozo.html"><div class="bottomsub2">ler mais</div></a>-->
+      </div>
+    </div>
+    <!--<script src="js/snapwidget.js"></script>-->
+    <!--<iframe src="http://snapwidget.com/in/?u=Z3VpemlvbmxhYnN8aW58MzAwfDZ8Mnx8bm98MHxub25lfG9uU3RhcnR8bm98eWVz&ve=130715" title="Instagram Widget" class="snapwidget-widget insta" allowTransparency="true" frameborder="0" scrolling="no"></iframe>-->
+
+    <!-- Contato -->
+    <div id="contact" class="pad-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="box" style="margin-top: 40%; text-align:center;">
+              <div class="titulo" style="margin-top: 14px;">Contato</div>
+            </div>
+          </div>
+          <div class="col-sm-6 bg mobile">
+            <div class="info" style="margin-top: 41%;">
+              <span style="color:#00bf54; font-weight: 600">INFO:</br></span>
+              Phone: <a href="tel:4132642248" style="color:#00bf54">+86 186 8036 4615</a></br>
+                    Address: <a href="javascript:if(confirm('http://goo.gl/Uln2L1  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://goo.gl/Uln2L1'" tppabs="http://goo.gl/Uln2L1" target="_blank" style="color:#BEBCBC">广东省深圳市南山区塘朗村</a></br>
+                    ...............</br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Rodape -->
+      <div class="footer">
+        <div class="container">&copy; 2017 <span style="color:#00bf54">Pan_shengxi </span><a href="#home" style="color:#00bf54"><i class="glyphicon glyphicon-heart"></i></a> | Version 1.0 | All photos , videos , etc are Trademarks of their respective owners .</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
