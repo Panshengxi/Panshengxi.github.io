@@ -111,14 +111,14 @@ a:link, a:visited, a:active {
   max-width: 190px;
 }
 .face {
-  background: url("../assets/img/favicons/face-01.png")/*tpa=http://guizion.com/images/face-01.png*/ no-repeat center;
+  background: url("../assets/img/favicons/face-01.png") no-repeat center;
   background-size: 8px;
   margin-top: 8px;
   opacity: 0.3;
 }
 #home {
   min-height: 700px;
-  background: url("../assets/img/favicons/5.png")/*tpa=http://guizion.com/images/5.png*/ no-repeat center center ;
+  background: url("../assets/img/favicons/5.png")  no-repeat center center ;
   height: 120%;
   width: 100%;
   -webkit-background-size: cover;
@@ -266,7 +266,7 @@ a:link, a:visited, a:active {
   color:#FFF;
 }
 .bg{
-  background: url("../assets/img/favicons/map.png")/*tpa=http://guizion.com/images/map.png*/ no-repeat; 
+  background: url("../assets/img/favicons/map.png") no-repeat; 
   background-size: 90%;
   background-position: bottom;
 }
@@ -308,7 +308,7 @@ a:link, a:visited, a:active {
 .patro{
   width: 250px;
   height: 55px;
-  background-image: url("../assets/img/favicons/patrocor.png")/*tpa=http://guizion.com/images/patrocor.png*/;
+  background-image: url("../assets/img/favicons/patrocor.png");
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 30px;
@@ -334,7 +334,7 @@ a:link, a:visited, a:active {
   width: 220px;
   height: 44px;
   background-size: 220px;
-  background-image: url("../assets/img/favicons/ric.png")/*tpa=http://guizion.com/images/ric.png*/;
+  background-image: url("../assets/img/favicons/ric.png");
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 35px;
@@ -641,27 +641,27 @@ a:link, a:visited, a:active {
   z-index: -1;
 }
 .tx1{
-  background: url("../assets/img/favicons/2.png")/*tpa=http://guizion.com/images/2.png*/;
+  background: url("../assets/img/favicons/2.png");
   background-size: 970px;
   }
 .tx2{
-  background: url("../assets/img/favicons/3.png")/*tpa=http://guizion.com/images/3.png*/;
+  background: url("../assets/img/favicons/3.png");
   background-size: 970px;
   }
 .tx3{
-  background: url("../assets/img/favicons/5.png")/*tpa=http://guizion.com/images/5.png*/;
+  background: url("../assets/img/favicons/5.png");
   background-size: 970px;
   }
 .tx4{
-  background: url("../assets/img/favicons/5.png")/*tpa=http://guizion.com/images/5.png*/;
+  background: url("../assets/img/favicons/5.png");
   background-size: 970px;
   }
 .tx5{
-  background: url("../assets/img/favicons/2.png")/*tpa=http://guizion.com/images/2.png*/;
+  background: url("../assets/img/favicons/2.png");
   background-size: 970px;
   }
 .tx6{
-  background: url("../assets/img/favicons/2.png")/*tpa=http://guizion.com/images/2.png*/;
+  background: url("../assets/img/favicons/2.png");
   background-size: 970px;
   }
 
